@@ -27,6 +27,8 @@ def train_model(model, dataloader, criterion, optimizer, epoch, num_epochs):
         running_loss += loss.item() * batch_inputs.size(0)
 
     epoch_loss = running_loss / len(dataloader.dataset)
+    
+    print("saving model")
     print(f"Epoch [{epoch+1}/{num_epochs}], Loss: {epoch_loss:.4f}")
     
     torch.save(model.state_dict(), f'model{i}.pth')

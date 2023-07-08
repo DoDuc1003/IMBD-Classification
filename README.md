@@ -2,18 +2,18 @@
 
 ## Install dataset
 
-'''bash 
+```bash 
 cd IMDB-Classification
-'''
+```
 
 Get dataset
 
-'''bash
+```bash
 wget http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
-'''
+```
 
 Unzip dataset
 
-'''bash 
+```bash 
 tar -xzf aclImdb_v1.tar.gz
-'''
+```
